@@ -8,7 +8,7 @@ from keep_alive import keep_alive
 
 status = os.getenv("status") #online/dnd/idle
 
-custom_status = ""
+custom_status = os.getenv("custom_status") #If you don't need a custom status on your profile, just put "" instead of "youtube.com/@SealedSaucer"
 
 usertoken = os.getenv("token")
 if not usertoken:
@@ -58,11 +58,11 @@ def onliner(token, status):
                     "name": "Custom Status",
                     "id": "custom",
                     #Uncomment the below lines if you want an emoji in the status
-                    #"emoji": {
-                        #"name": "island",
-                        #"id": "1244228611393982484",
-                        #"animated": False,
-                    #},
+                    "emoji": {
+                        "name": "wumpus2",
+                        "id": "1198125936047038545",
+                        "animated": False,
+                    },
                 }
             ],
             "status": status,
